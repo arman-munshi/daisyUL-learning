@@ -16,9 +16,7 @@
       type="text/css"
     />
     <title>Explore DaisyUI</title>
-    <style type="text/tailwindcss">
-      
-    </style>
+    <style type="text/tailwindcss"></style>
   </head>
   <body>
     <!-- nav bar -->
@@ -83,7 +81,9 @@
     <!-- modal section -->
     <section class="text-center m-30">
       <!-- Open the modal using ID.showModal() method -->
-      <button class="btn btn-secondary" onclick="my_modal_1.showModal()">open modal</button>
+      <button class="btn btn-secondary" onclick="my_modal_1.showModal()">
+        open modal
+      </button>
       <dialog id="my_modal_1" class="modal">
         <div class="modal-box">
           <h3 class="text-lg font-bold">Hello!</h3>
@@ -100,7 +100,7 @@
 
     <!-- hero section -->
     <section>
-      <div class="hero bg-base-200 min-h-screen">
+      <div class="hero bg-accent min-h-screen">
         <div class="hero-content flex-col lg:flex-row-reverse">
           <img
             src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
@@ -119,13 +119,35 @@
       </div>
     </section>
 
+    <!-- hero bacground image section -->
+    <section>
+      <div
+        class="hero min-h-screen"
+        style="
+          background-image: url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp);
+        "
+      >
+        <div class="hero-overlay"></div>
+        <div class="hero-content text-neutral-content text-center">
+          <div class="max-w-md">
+            <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+            <p class="mb-5">
+              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
+              et a id nisi.
+            </p>
+            <button class="btn btn-primary">Get Started</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <h1 class="text-3xl text-center py-30 font-bold underline text-clifford">
       Hello world!
     </h1>
     <div class="text-center">
       <button class="btn btn-primary">Click Me</button>
       <button class="btn btn-primary">Click Me</button>
-
     </div>
 
     <!-- footer section -->
